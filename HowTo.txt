@@ -1,0 +1,19 @@
+1.Create a new repository on github and clone it locally
+2.Create a package.json file to describe your module
+3.Create and Test the code for your module
+4.Publish your module to NPM
+ 
+To create your own module, you’ll want to have a public repository on GitHub to house the source code. After cloning your new module repository to your local machine, run:
+npm init
+ 
+This will walk you through a set of prompts that allows you to specify details about your new module.
+ 
+Publish your module to NPM
+ 
+Now that you’ve written and tested the code for your node module, it’s time to publish it to the npm registry. Before you can publish your new module you’ll need to register a user on the npm website, or you can create a user with the adduser npm command. Finally you are ready to publish your module, simply issue the command:
+npm publish
+ 
+You will be prompted for the credentials for the user you just created and if all goes well, your module will be available for other to install using the npm install command:
+npm install module-name
+ 
+When making changes to your module you’ll have to update the version number in the package.json file and then reissue “npm publish” this will ensure users of your module can get the latest code.
